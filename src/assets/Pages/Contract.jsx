@@ -57,6 +57,13 @@ return (
 
 
 
+<div className="submit_btn mt-10 text-center">
+       <button class="button">
+                        <span class="button-content font-medium font-prymary text-[16px] text-white">Download CV </span>
+                    </button>
+</div>
+
+
 
             </div>
 

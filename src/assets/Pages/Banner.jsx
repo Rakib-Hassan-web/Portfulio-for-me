@@ -7,7 +7,7 @@ return (
 <>
 
 
-    <section id='banner' className='py-[100px] bg-prymary'>
+    <section id='banner' className='py-[70px] bg-prymary'>
 
         <div className="container">
 
