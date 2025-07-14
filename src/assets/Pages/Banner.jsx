@@ -17,8 +17,7 @@ return (
                     <h2 className=' font-prymary font-bold text-[48px] text-white '>Hi, I am
                     </h2>
                     <span className=' font-prymary font-bold text-[48px] text-white '>Md.Rakib Hasan</span>
-                    <p className='mt-[9px] text-[#828282] font-medium text-[18px] font-prymary mb-[47px]'>Full-Stack
-                        Developer</p>
+                    <p className='mt-[9px] text-[#828282] font-medium text-[18px] font-prymary mb-[47px]'>Frontend Developer</p>
                     <Link>
                     <button class="button">
                         <span class="button-content font-medium font-prymary text-[16px] text-white">Download CV </span>

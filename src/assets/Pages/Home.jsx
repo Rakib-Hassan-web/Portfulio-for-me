@@ -3,6 +3,8 @@ import Navbar from '../Components/Navbar'
 import Banner from './Banner'
 import About from './About'
 import Services from './Services'
+import Myskills from './Myskills'
+import Contract from './Contract'
 
 const Home = () => {
   return (
@@ -14,6 +16,8 @@ const Home = () => {
      <Banner/>
      <About/>
      <Services/>
+  <Myskills/>
+  <Contract/>
     
     
     

@@ -16,7 +16,7 @@ const About = () => {
 
 <h2 id='about_title ' className='text-center text-[48px] font-bold font-prymary text-white mb-[48px]'>About</h2>
 
-<p className='w-[745px]  text-[18px] font-normal font-prymary text-white text-center m-auto pb-10'>I am Rakib, a passionate Full-Stake Developer to building dynamic and responsive web applications. Skilled in HTML, HTML5, CSS, CSS3, javascript, React and Tailwind CSS. I help you create websites for your business at affordable cost.  My objective is to deliver work within time and budget that meets the client's requirements.</p>
+<p className='w-[745px]  text-[18px] font-normal font-prymary text-white text-center m-auto pb-10'>I am Rakib, a passionate Frontend  Developer to building dynamic and responsive web applications. Skilled in HTML, HTML5, CSS, CSS3, javascript, React and Tailwind CSS. I help you create websites for your business at affordable cost.  My objective is to deliver work within time and budget that meets the client's requirements.</p>
 
 <div className="about_Info flex items-center justify-between">
 
