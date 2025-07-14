@@ -28,28 +28,32 @@ return (
 
 
 
-                         <input type="text"
+                    <input type="text"
                         className='py-[18px] pr-[200px]  border-[#4F4F4F]  text-[20px] text-[#d5d5d5] font-prymary font-medium border-b-2 outline-none '
                         placeholder='Last Name' />
                 </div>
 
 
-<div className="secendRow mt-20">
-
-
-
-
-                        <input type="text"
+ <div className="seconfpRow flex-row gap-10 mt-15">
+                    <input type="text"
                         className='ml-60 mr-30 py-[18px] pr-[200px]  border-[#4F4F4F]  text-[20px] text-[#d5d5d5] font-prymary font-medium border-b-2 outline-none '
-                        placeholder='First Name' />
+                        placeholder='Email' />
 
 
 
-                         <input type="text"
-                        className='py-[18px] pr-[200px]  border-[#4F4F4F]  text-[2px] text-[#d5d5d5] font-prymary font-medium border-b-2 outline-none '
-                        placeholder='Last Name' />
+                    <input type="text"
+                        className='py-[18px] pr-[200px]  border-[#4F4F4F]  text-[20px] text-[#d5d5d5] font-prymary font-medium border-b-2 outline-none '
+                        placeholder='Phone number' />
+                </div>
 
-</div>
+
+                
+                <div className="MassageINPUT">
+
+
+                    <input type="text" className=' ml-60 mt-15 py-[18px] pr-[200px]  border-[#4F4F4F]  text-[20px] text-[#d5d5d5] font-prymary font-medium border-b-2 outline-none '
+                        placeholder='Massage' />
+                </div>
 
 
 
