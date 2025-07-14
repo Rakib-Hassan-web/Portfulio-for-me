@@ -44,6 +44,8 @@ Design</div>
 
 
 
+<div className="singleService w-[349px] bg-[#212121]  mt-10 mr-10 pt-[145px] pl-[80px] pb-[46px] pr-[115px] font-medium text-[36px] text-[#535353] font-prymary border-2 border-green-800"><h2>Creative</h2>
+<span>Solutions</span></div>
 
 
 </div>
