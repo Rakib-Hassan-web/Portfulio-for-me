@@ -21,6 +21,11 @@ const Services = () => {
 </div>
 
 
+<div className="singleService w-[349px] bg-[#212121] pt-[101px] pl-[50px] pb-[36px] pr-[85px] font-medium text-[36px] text-[#535353] font-prymary border-2 border-green-800">
+
+    <h2>Web Development</h2>
+</div>
+
 
 
 </div>
