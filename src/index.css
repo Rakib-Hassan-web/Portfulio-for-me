@@ -1,1 +1,24 @@
 @import "tailwindcss";
+
+
+
+
+
+
+
+
+/* ------container----- */
+@utility container{
+  margin-inline:auto;
+}
+
+
+
+
+
+
+
+
+@theme {
+  --color-prymary:#171717
+}
