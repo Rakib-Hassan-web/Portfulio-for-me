@@ -33,6 +33,18 @@ const Services = () => {
 Design</div>
 
 
+<div className="singleService w-[349px] bg-[#212121] pt-[101px] pl-[50px] pb-[36px] pr-[85px] font-medium text-[36px] text-[#535353] font-prymary border-2 border-green-800"><h2>responsive</h2>
+<span> Web Design</span>
+</div>
+
+
+<div className="singleService w-[389px] bg-[#212121] pt-[101px] pl-[50px] pb-[36px] pr-[85px] font-medium text-[36px] text-[#535353] font-prymary border-2 border-green-800 mt-10 ml-10"><h2>Ux Commitment</h2>
+<span>and Integration</span>
+</div>
+
+
+
+
 
 </div>
 
