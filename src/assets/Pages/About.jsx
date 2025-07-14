@@ -21,7 +21,7 @@ const About = () => {
 <div className="about_Info flex items-center justify-between">
 
 <div className="single_About1  ">
-<Link ><SiNamecheap  className='text-4xl   ml-[60px] text-[#85f994c5] '/></Link>
+<Link ><SiNamecheap  className='text-4xl   ml-[60px] text-[#85f994c5]  hover:scale-[1.2] duration-[.4s] '/></Link>
     <h2 className='text-[18px] font-normal font-prymary text-white  ml-[50px] mt-[18px] '>Name</h2>
     <h2 className='text-[22px] font-normal font-prymary text-white  ' >MD.Rakib Hasan</h2>
 </div>
@@ -29,7 +29,7 @@ const About = () => {
 
 
 <div className="single_About1  ">
-<Link ><MdEmail className='text-4xl text-[#85f994c5]  ml-[115px]  '/></Link>
+<Link ><MdEmail className='text-4xl text-[#85f994c5]  ml-[115px]  hover:scale-[1.2] duration-[.4s] '/></Link>
     <h2 className='text-[18px] font-normal font-prymary text-white  ml-[80px] mt-[18px] '>Email Address</h2>
     <h2 className='text-[22px] font-normal font-prymary text-white  ' >ornilhasanridoy@gmail.com</h2>
 </div>
@@ -38,7 +38,7 @@ const About = () => {
 
 
 <div className="single_About1  ">
-<Link ><FaFacebook  className='text-4xl text-[#85f994c5]  ml-[60px]  '/></Link>
+<Link ><FaFacebook  className='text-4xl text-[#85f994c5]  ml-[60px]   hover:scale-[1.2] duration-[.4s] '/></Link>
 
     <h2 className='text-[18px] font-normal font-prymary text-white  ml-[40px] mt-[18px] '>Facebook </h2>
     <h2 className='text-[22px] font-normal font-prymary text-white  ' >MD.Rakib Hasan</h2>
@@ -48,7 +48,7 @@ const About = () => {
 
 
 <div className="single_About1  ">
-<Link ><FaPhone   className='text-4xl text-[#85f994c5] ml-[60px]  '/></Link>
+<Link ><FaPhone   className='text-4xl text-[#85f994c5] ml-[60px] hover:scale-[1.2] duration-[.4s] '/></Link>
     <h2 className='text-[18px] font-normal font-prymary text-white  ml-[50px] mt-[18px] '>Phone</h2>
     <h2 className='text-[22px] font-normal font-prymary text-white  ' >+8801904522130</h2>
 </div>
