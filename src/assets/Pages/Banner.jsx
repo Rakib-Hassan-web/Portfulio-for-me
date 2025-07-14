@@ -15,6 +15,7 @@ const Banner = () => {
     <h2 className=' font-prymary font-bold text-[48px] text-white '>Hi, I am
     </h2>
     <span className=' font-prymary font-bold text-[48px] text-white '>Md.Rakib Hasan</span>
+    <p className='mt-[9px] text-gray-500  font-medium text-[18px] font-prymary'>Full-Stack Developer</p>
 </div>
 
 
