@@ -10,7 +10,7 @@ const Navbar = () => {
 
  <div className="container">
 
-<h1 >RHR</h1>
+<h1 className=''>RHR</h1>
 <div id="Navitems">
 <ul><li><Link></Link></li></ul>
 <ul><li><Link></Link></li></ul>
