@@ -1,5 +1,6 @@
 import React from 'react'
 import Navbar from '../Components/Navbar'
+import Banner from './Banner'
 
 const Home = () => {
   return (
@@ -8,6 +9,7 @@ const Home = () => {
     
     
      <Navbar/>
+     <Banner/>
     
     
     
