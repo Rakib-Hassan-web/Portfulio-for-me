@@ -28,7 +28,9 @@ return (
 
 
 
-                      
+                         <input type="text"
+                        className='py-[18px] pr-[200px]  border-[#4F4F4F]  text-[20px] text-[#d5d5d5] font-prymary font-medium border-b-2 outline-none '
+                        placeholder='Last Name' />
                 </div>
 
 
