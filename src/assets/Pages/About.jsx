@@ -10,7 +10,7 @@ const About = () => {
 
 <div className="container">
 
-
+<h2 id='about_title ' className='text-center text-[48px] font-bold font-prymary text-white mb-[48px]'>About</h2>
 
 </div>
 
