@@ -39,6 +39,19 @@ return (
                     </Link>
                 </div>
 
+{/* -----------------foloow me--------- */}
+
+
+<div>
+    <h2>Follow me</h2>
+
+
+<div>
+    
+</div>
+
+
+</div>
 
 
                 <div className="banner_img ">
