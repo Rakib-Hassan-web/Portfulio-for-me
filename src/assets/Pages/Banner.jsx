@@ -3,6 +3,7 @@ import { Link } from 'react-router'
 import bnrimg from '../image/Adobe Express - file-Photoroom.png'
 import { Typewriter } from 'react-simple-typewriter';
 import { FaFacebook } from 'react-icons/fa';
+import { IoLogoLinkedin } from 'react-icons/io';
 
 
 const Banner = () => {
@@ -36,11 +37,13 @@ return (
 
 
                 <div>
-                    <h2 className='text-white'>Follow me</h2>
+                    <h2 className='text-white mt-9'>Follow me</h2>
 
 
-                    <div>
-                        <FaFacebook />
+                    <div className='mt-5'>
+                        <FaFacebook  className='text-3xl text-white'/>
+                        <IoLogoLinkedin  />
+
 
                     </div>
 
