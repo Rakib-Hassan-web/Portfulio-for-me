@@ -40,7 +40,7 @@ return (
                     <h2 className='text-white mt-9'>Follow me</h2>
 
 
-                    <div className='mt-5'>
+                    <div className='mt-5 flex items-center gap-3'>
                         <FaFacebook  className='text-3xl text-white'/>
                         <IoLogoLinkedin  className='text-3xl text-white' />
 
