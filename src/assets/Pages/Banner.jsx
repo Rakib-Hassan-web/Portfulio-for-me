@@ -1,6 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router'
 import bnrimg from '../image/Adobe Express - file-Photoroom.png'
+import { Typewriter } from 'react-simple-typewriter';
+
 
 const Banner = () => {
 return (
@@ -11,12 +13,23 @@ return (
 
         <div className="container">
 
-            <div className="banner_main flex items-center gap-[600px]">
+            <div className="banner_main flex items-center gap-[500px]">
 
                 <div className="bannertexxt pl-[50px]">
-                    <h2 className=' font-prymary font-bold text-[48px] text-white '>Hi, I am
-                    </h2>
-                    <span className=' font-prymary font-bold text-[48px] text-white '>Md.Rakib Hasan</span>
+                    <div className='w-[400px]'>
+ <h2 className="font-prymary font-bold text-[48px] text-white">
+      <Typewriter
+        words={['Hi,', 'I', 'am', 'Md.Rakib', 'Hasan']}
+        loop={0} // 0 = infinite loop
+        cursor
+        cursorStyle="|"
+        typeSpeed={100}
+        deleteSpeed={50}
+        delaySpeed={1000}
+      />
+    </h2>
+    </div>
+                    <span className=' font-prymary font-bold text-[48px] text-white '></span>
                     <p className='mt-[9px] text-[#828282] font-medium text-[18px] font-prymary mb-[47px]'>Frontend Developer</p>
                     <Link>
                     <button class="button">

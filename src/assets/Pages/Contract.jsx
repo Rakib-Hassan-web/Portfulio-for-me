@@ -34,7 +34,7 @@ return (
                 </div>
 
 
- <div className="seconfpRow flex-row gap-10 mt-15">
+                <div className="seconfpRow flex-row gap-10 mt-15">
                     <input type="text"
                         className='ml-60 mr-30 py-[18px] pr-[200px]  border-[#4F4F4F]  text-[20px] text-[#d5d5d5] font-prymary font-medium border-b-2 outline-none '
                         placeholder='Email' />
@@ -47,21 +47,22 @@ return (
                 </div>
 
 
-                
+
                 <div className="MassageINPUT">
 
 
-                    <input type="text" className=' w-[965px] ml-60 mt-15 py-[18px] h-[109px] pl-[10px]  border-[#4F4F4F]  text-[20px] text-[#d5d5d5] font-prymary font-medium border-2 outline-none '
+                    <input type="text"
+                        className=' w-[965px] ml-60 mt-15 py-[18px] h-[109px] pl-[10px]  border-[#4F4F4F]  text-[20px] text-[#d5d5d5] font-prymary font-medium border-2 outline-none '
                         placeholder='Massage' />
                 </div>
 
 
 
-<div className="submit_btn mt-10 text-center">
-       <button class="button">
-                        <span class="button-content font-medium font-prymary text-[16px] text-white">Download CV </span>
+                <div className="submit_btn mt-10 text-center">
+                    <button class="button">
+                        <span class="button-content font-medium font-prymary text-[16px] text-white">Submit Now </span>
                     </button>
-</div>
+                </div>
 
 
 
