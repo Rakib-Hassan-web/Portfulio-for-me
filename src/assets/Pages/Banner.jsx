@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'react-router'
 import bnrimg from '../image/Adobe Express - file-Photoroom.png'
 import { Typewriter } from 'react-simple-typewriter';
+import { FaFacebook } from 'react-icons/fa';
 
 
 const Banner = () => {
@@ -17,46 +18,41 @@ return (
 
                 <div className="bannertexxt pl-[50px]">
                     <div className='w-[400px]'>
- <h2 className="font-prymary font-bold text-[48px] text-white">
-      <Typewriter
-        words={['Hi,', 'I', 'am', 'Md.Rakib', 'Hasan']}
-        loop={0} // 0 = infinite loop
-        cursor
-        cursorStyle="|"
-        typeSpeed={100}
-        deleteSpeed={50}
-        delaySpeed={1000}
-      />
-    </h2>
-    </div>
+                        <h2 className="font-prymary font-bold text-[48px] text-white">
+                            <Typewriter words={['Hi,', 'I' , 'am' , 'Md.Rakib' , 'Hasan' ]} loop={0} // 0=infinite loop
+                                cursor cursorStyle="|" typeSpeed={100} deleteSpeed={50} delaySpeed={1000} />
+                        </h2>
+                    </div>
                     <span className=' font-prymary font-bold text-[48px] text-white '></span>
-                    <p className='mt-[9px] text-[#828282] font-medium text-[18px] font-prymary mb-[47px]'>Frontend Developer</p>
+                    <p className='mt-[9px] text-[#828282] font-medium text-[18px] font-prymary mb-[47px]'>Frontend
+                        Developer</p>
                     <Link>
                     <button class="button">
                         <span class="button-content font-medium font-prymary text-[16px] text-white">Download CV </span>
                     </button>
 
                     </Link>
+                {/* -----------------foloow me--------- */}
+
+
+                <div>
+                    <h2 className='text-white'>Follow me</h2>
+
+
+                    <div>
+                        <FaFacebook />
+
+                    </div>
+
+
+                </div>
                 </div>
 
-{/* -----------------foloow me--------- */}
-
-
-<div>
-    <h2>Follow me</h2>
-
-
-<div>
-    
-</div>
-
-
-</div>
 
 
                 <div className="banner_img ">
                     <img className='bg-cover w-[450px] h-[600px] rounded-full' src={bnrimg} alt="" />
-                    </div>
+                </div>
 
 
             </div>
