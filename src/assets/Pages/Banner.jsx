@@ -42,7 +42,7 @@ return (
 
                     <div className='mt-5'>
                         <FaFacebook  className='text-3xl text-white'/>
-                        <IoLogoLinkedin  />
+                        <IoLogoLinkedin  className='text-3xl text-white' />
 
 
                     </div>
