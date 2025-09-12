@@ -43,7 +43,7 @@ return (
 
                     <div className='mt-5 flex items-center gap-3'>
                         <Link to={'https://www.facebook.com/rakib.ahmed.216234/'}>
-                        <FaFacebook  className='text-3xl text-white'/>
+                        <FaFacebook  className='text-3xl text-white hover:text-green-400 hover:scale-[1.3] duration-300'/>
                         </Link>
 
                         <Link to={'https://www.linkedin.com/in/rakib-hasan-wev-44646336a/'}>
