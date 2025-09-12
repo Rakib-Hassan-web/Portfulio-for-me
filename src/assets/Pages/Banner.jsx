@@ -49,7 +49,9 @@ return (
                         <Link to={'https://www.linkedin.com/in/rakib-hasan-wev-44646336a/'}>
                         <TbBrandLinkedinFilled   className='text-4xl text-white' />
                         </Link>
+                        <Link to={'https://github.com/Rakib-Hassan-web'}>
                         <FaGithub  className='text-3xl text-white' />
+                        </Link>
 
 
                     </div>
