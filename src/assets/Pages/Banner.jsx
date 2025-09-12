@@ -2,8 +2,9 @@ import React from 'react'
 import { Link } from 'react-router'
 import bnrimg from '../image/Adobe Express - file-Photoroom.png'
 import { Typewriter } from 'react-simple-typewriter';
-import { FaFacebook } from 'react-icons/fa';
+import { FaFacebook, FaGithub } from 'react-icons/fa';
 import { IoLogoLinkedin } from 'react-icons/io';
+import { TbBrandLinkedinFilled } from 'react-icons/tb';
 
 
 const Banner = () => {
@@ -41,13 +42,17 @@ return (
 
 
                     <div className='mt-5 flex items-center gap-3'>
+                        <Link to={'https://www.facebook.com/rakib.ahmed.216234/'}>
                         <FaFacebook  className='text-3xl text-white'/>
-                        <IoLogoLinkedin  className='text-3xl text-white' />
+                        </Link>
+                        
+                        <TbBrandLinkedinFilled   className='text-4xl text-white' />
+                        <FaGithub  className='text-3xl text-white' />
 
 
                     </div>
 
-<h2>prorfulio st</h2>
+
                 </div>
                 </div>
 
