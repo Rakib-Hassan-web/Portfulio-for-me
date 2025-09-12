@@ -16,7 +16,7 @@ const Myskills = () => {
     
     
         
-    <section id='MYSkill ' className='pt-[130px]  bg-prymary'>
+    <section id='MYSkill ' className='pt-[130px] mt-0  bg-prymary'>
 
 
 <div className="container">

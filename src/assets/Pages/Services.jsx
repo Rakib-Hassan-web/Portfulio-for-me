@@ -1,67 +1,66 @@
 import React from 'react'
 
+import { FaCode, FaLaptopCode, FaPaintBrush, FaMobileAlt, FaUsers, FaLightbulb } from "react-icons/fa";
+
 const Services = () => {
+
+
+    const services = [
+    {
+      icon: <FaCode className="text-4xl text-green-400" />,
+      title: "Software Development",
+      desc: "Building efficient, scalable, and high-performance software solutions."
+    },
+    {
+      icon: <FaLaptopCode className="text-4xl text-green-400" />,
+      title: "Web Development",
+      desc: "Creating modern, responsive, and secure web applications."
+    },
+    {
+      icon: <FaPaintBrush className="text-4xl text-green-400" />,
+      title: "Web Design",
+      desc: "Designing user-friendly and attractive website layouts."
+    },
+    {
+      icon: <FaMobileAlt className="text-4xl text-green-400" />,
+      title: "Responsive Web Design",
+      desc: "Ensuring seamless user experience across all devices."
+    },
+    {
+      icon: <FaUsers className="text-4xl text-green-400" />,
+      title: "UX Integration",
+      desc: "Crafting smooth and engaging user experiences with proper UX design."
+    },
+    {
+      icon: <FaLightbulb className="text-4xl text-green-400" />,
+      title: "Creative Solutions",
+      desc: "Innovative approaches to solve problems effectively."
+    },
+  ];
   return (
     <>
     
     
-        
-    <section id='Services ' className='pt-[120px] bg-prymary'>
 
+  <section className="bg-prymary  text-white py-26 mb-0 px-6">
+      <h2 className="text-4xl font-bold text-center mb-12">What I Do</h2>
 
-<div className="container">
-
-<h2 id='about_title ' className='text-center text-[48px] font-bold font-prymary text-white '>What i do</h2>
-
-
-<div className=" pt-[103px] flex justify-around items-center flex-wrap m-auto">
-
-<div className="singleService w-[349px] bg-[#212121] pt-[101px] pl-[50px] pb-[36px] pr-[85px] font-medium text-[36px] text-[#535353] font-prymary border-2 border-green-800 ">
-    <h2>Software Development</h2>
-</div>
-
-
-<div className="singleService w-[349px] bg-[#212121] pt-[101px] pl-[50px] pb-[36px] pr-[85px] font-medium text-[36px] text-[#535353] font-prymary border-2 border-green-800">
-
-    <h2>Web Development</h2>
-</div>
-
-
-
-<div className="singleService w-[349px] bg-[#212121] pt-[101px] pl-[50px] pb-[36px] pr-[85px] font-medium text-[36px] text-[#535353] font-prymary border-2 border-green-800">
-    <h2>Web</h2>
-Design</div>
-
-
-<div className="singleService w-[349px] bg-[#212121] pt-[101px] pl-[50px] pb-[36px] pr-[85px] font-medium text-[36px] text-[#535353] font-prymary border-2 border-green-800"><h2>responsive</h2>
-<span> Web Design</span>
-</div>
-
-
-<div className="singleService w-[389px] bg-[#212121] pt-[101px] pl-[50px] pb-[36px] pr-[85px] font-medium text-[36px] text-[#535353] font-prymary border-2 border-green-800 mt-10 ml-10"><h2>Ux Commitment</h2>
-<span>and Integration</span>
-</div>
-
-
-
-<div className="singleService w-[349px] bg-[#212121]  mt-10 mr-10 pt-[145px] pl-[80px] pb-[46px] pr-[115px] font-medium text-[36px] text-[#535353] font-prymary border-2 border-green-800"><h2>Creative</h2>
-<span>Solutions</span></div>
-
-
-</div>
-
-
-
-
-</div>
-
-
-
-
-
-
+      <div className="grid md:grid-cols-3 sm:grid-cols-2 gap-8 max-w-6xl mx-auto">
+        {services.map((service, index) => (
+          <div
+            key={index}
+            className="bg-gray-900 border border-green-700 rounded-2xl p-6 text-center 
+                       shadow-md hover:shadow-green-600 hover:-translate-y-2 
+                       transition duration-300 ease-in-out"
+          >
+            <div className="flex justify-center mb-4">{service.icon}</div>
+            <h3 className="text-xl font-semibold mb-2">{service.title}</h3>
+            <p className="text-gray-400 text-sm">{service.desc}</p>
+          </div>
+        ))}
+      </div>
     </section>
-    
+ 
     
     
     
