@@ -50,7 +50,7 @@ return (
                         <TbBrandLinkedinFilled   className='text-4xl text-white hover:text-[#0077B5] hover:scale-[1.3] duration-300' />
                         </Link>
                         <Link to={'https://github.com/Rakib-Hassan-web'}>
-                        <FaGithub  className='text-3xl text-white' />
+                        <FaGithub  className='text-3xl text-white hover:text-green-400 hover:scale-[1.3] duration-300' />
                         </Link>
 
 
