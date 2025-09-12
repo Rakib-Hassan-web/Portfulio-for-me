@@ -45,8 +45,10 @@ return (
                         <Link to={'https://www.facebook.com/rakib.ahmed.216234/'}>
                         <FaFacebook  className='text-3xl text-white'/>
                         </Link>
-                        
+
+                        <Link to={'https://www.linkedin.com/in/rakib-hasan-wev-44646336a/'}>
                         <TbBrandLinkedinFilled   className='text-4xl text-white' />
+                        </Link>
                         <FaGithub  className='text-3xl text-white' />
 
 
