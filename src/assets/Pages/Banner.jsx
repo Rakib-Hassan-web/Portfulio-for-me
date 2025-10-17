@@ -38,7 +38,7 @@ return (
 
 
                 <div>
-                    <h2 className='text-white mt-9'>Follow me</h2>
+                    <h2 className=' mt-9 font-prymary text-lg text-[#828282]'>Follow me</h2>
 
 
                     <div className='mt-5 flex items-center gap-3'>
