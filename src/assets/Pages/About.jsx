@@ -12,7 +12,8 @@ const About = () => {
 useEffect(() => {
   AOS.init({
     duration: 1000,  
-    once: true,       
+    once: true,     
+        once: false,   
   });
 }, []);
   return (
