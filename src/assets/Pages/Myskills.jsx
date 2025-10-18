@@ -28,75 +28,37 @@ const Myskills = () => {
             "
           >
 
-            {/* React */}
-            <div className="singl_skill hover:scale-[1.1] duration-[.4s] flex flex-col gap-2 w-[200px] h-[250px]
-             bg-gradient-to-r from-slate-400 to-slate-700 rounded-[10px] justify-center items-center">
-              <FaReact className='text-6xl' style={{ color: '#61DAFB' }} />
-              <h2 className='py-[15px] w-full text-center text-[23px] font-medium font-prymary text-white'>React</h2>
-            </div>
-
-            {/* HTML */}
-            <div className="singl_skill hover:scale-[1.1] duration-[.4s] flex flex-col gap-2 w-[200px] h-[250px]
-             bg-gradient-to-r from-slate-400 to-slate-700 rounded-[10px] justify-center items-center">
-              <FaHtml5 className='text-6xl' style={{ color: '#E34F26' }} />
-              <h2 className='py-[15px] w-full text-center text-[23px] font-medium font-prymary text-white'>HTML5</h2>
-            </div>
-
-            {/* Tailwind */}
-            <div className="singl_skill hover:scale-[1.1] duration-[.4s] flex flex-col gap-2 w-[200px] h-[250px]
-             bg-gradient-to-r from-slate-400 to-slate-700 rounded-[10px] justify-center items-center">
-              <RiTailwindCssFill className='text-6xl' style={{ color: '#38BDF8' }} />
-              <h2 className='py-[15px] w-full text-center text-[23px] font-medium font-prymary text-white'>Tailwind CSS</h2>
-            </div>
-
-            {/* CSS */}
-            <div className="singl_skill hover:scale-[1.1] duration-[.4s] flex flex-col gap-2 w-[200px] h-[250px]
-             bg-gradient-to-r from-slate-400 to-slate-700 rounded-[10px] justify-center items-center">
-              <TiCss3 className='text-6xl' style={{ color: '#1572B6' }} />
-              <h2 className='py-[15px] w-full text-center text-[23px] font-medium font-prymary text-white'>CSS3</h2>
-            </div>
-
-            {/* Bootstrap */}
-            <div className="singl_skill hover:scale-[1.1] duration-[.4s] flex flex-col gap-2 w-[200px] h-[250px]
-             bg-gradient-to-r from-slate-400 to-slate-700 rounded-[10px] justify-center items-center">
-              <FaBootstrap className='text-6xl' style={{ color: '#7952B3' }} />
-              <h2 className='py-[15px] w-full text-center text-[23px] font-medium font-prymary text-white'>Bootstrap</h2>
-            </div>
-
-            {/* Figma */}
-            <div className="singl_skill hover:scale-[1.1] duration-[.4s] flex flex-col gap-2 w-[200px] h-[250px]
-             bg-gradient-to-r from-slate-400 to-slate-700 rounded-[10px] justify-center items-center">
-              <FaFigma className='text-6xl' style={{ color: '#F24E1E' }} />
-              <h2 className='py-[15px] w-full text-center text-[23px] font-medium font-prymary text-white'>Figma</h2>
-            </div>
-
-            {/* JavaScript */}
-            <div className="singl_skill hover:scale-[1.1] duration-[.4s] flex flex-col gap-2 w-[200px] h-[250px]
-             bg-gradient-to-r from-slate-400 to-slate-700 rounded-[10px] justify-center items-center">
-              <IoLogoJavascript className='text-6xl' style={{ color: '#F7DF1E' }} />
-              <h2 className='py-[15px] w-full text-center text-[23px] font-medium font-prymary text-white'>JavaScript</h2>
-            </div>
-
-            {/* Firebase */}
-            <div className="singl_skill hover:scale-[1.1] duration-[.4s] flex flex-col gap-2 w-[200px] h-[250px]
-             bg-gradient-to-r from-slate-400 to-slate-700 rounded-[10px] justify-center items-center">
-              <IoLogoFirebase className='text-6xl' style={{ color: '#FFCA28' }} />
-              <h2 className='py-[15px] w-full text-center text-[23px] font-medium font-prymary text-white'>Firebase</h2>
-            </div>
-
-            {/* Redux */}
-            <div className="singl_skill hover:scale-[1.1] duration-[.4s] flex flex-col gap-2 w-[200px] h-[250px]
-             bg-gradient-to-r from-slate-400 to-slate-700 rounded-[10px] justify-center items-center">
-              <SiRedux className='text-6xl' style={{ color: '#764ABC' }} />
-              <h2 className='py-[15px] w-full text-center text-[23px] font-medium font-prymary text-white'>Redux</h2>
-            </div>
-
-            {/* Github */}
-            <div className="singl_skill hover:scale-[1.1] duration-[.4s] flex flex-col gap-2 w-[200px] h-[250px]
-             bg-gradient-to-r from-slate-400 to-slate-700 rounded-[10px] justify-center items-center">
-              <FaGithub className='text-6xl' style={{ color: '#181717' }} />
-              <h2 className='py-[15px] w-full text-center text-[23px] font-medium font-prymary text-white'>Github</h2>
-            </div>
+            {/* Skill Card Template */}
+            {[
+              { icon: <FaReact style={{ color: '#61DAFB' }} />, name: 'React' },
+              { icon: <FaHtml5 style={{ color: '#E34F26' }} />, name: 'HTML5' },
+              { icon: <RiTailwindCssFill style={{ color: '#38BDF8' }} />, name: 'Tailwind CSS' },
+              { icon: <TiCss3 style={{ color: '#1572B6' }} />, name: 'CSS3' },
+              { icon: <FaBootstrap style={{ color: '#7952B3' }} />, name: 'Bootstrap' },
+              { icon: <FaFigma style={{ color: '#F24E1E' }} />, name: 'Figma' },
+              { icon: <IoLogoJavascript style={{ color: '#F7DF1E' }} />, name: 'JavaScript' },
+              { icon: <IoLogoFirebase style={{ color: '#FFCA28' }} />, name: 'Firebase' },
+              { icon: <SiRedux style={{ color: '#764ABC' }} />, name: 'Redux' },
+              { icon: <FaGithub style={{ color: '#181717' }} />, name: 'Github' },
+            ].map((skill, index) => (
+              <div
+                key={index}
+                className="
+                  singl_skill 
+                  hover:scale-[1.1] duration-[.4s] 
+                  flex flex-col gap-2
+                  bg-gradient-to-r from-slate-400 to-slate-700 
+                  rounded-[10px] justify-center items-center
+                  w-[45%] sm:w-[45%] md:w-[30%] lg:w-[18%] 
+                  h-[250px]
+                "
+              >
+                <div className="text-6xl">{skill.icon}</div>
+                <h2 className='py-[15px] w-full text-center text-[23px] font-medium font-prymary text-white'>
+                  {skill.name}
+                </h2>
+              </div>
+            ))}
 
           </div>
         </div>
