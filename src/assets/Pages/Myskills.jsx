@@ -28,17 +28,16 @@ const Myskills = () => {
             "
           >
 
-            {/* Skill Card Template */}
             {[
               { icon: <FaReact style={{ color: '#61DAFB' }} />, name: 'React' },
               { icon: <FaHtml5 style={{ color: '#E34F26' }} />, name: 'HTML5' },
               { icon: <RiTailwindCssFill style={{ color: '#38BDF8' }} />, name: 'Tailwind CSS' },
               { icon: <TiCss3 style={{ color: '#1572B6' }} />, name: 'CSS3' },
-              { icon: <FaBootstrap style={{ color: '#7952B3' }} />, name: 'Bootstrap' },
+              { icon: <FaBootstrap style={{ color: '#fff' }} />, name: 'Bootstrap' },
               { icon: <FaFigma style={{ color: '#F24E1E' }} />, name: 'Figma' },
               { icon: <IoLogoJavascript style={{ color: '#F7DF1E' }} />, name: 'JavaScript' },
               { icon: <IoLogoFirebase style={{ color: '#FFCA28' }} />, name: 'Firebase' },
-              { icon: <SiRedux style={{ color: '#764ABC' }} />, name: 'Redux' },
+              { icon: <SiRedux style={{ color: '#e44d26' }} />, name: 'Redux' },
               { icon: <FaGithub style={{ color: '#181717' }} />, name: 'Github' },
             ].map((skill, index) => (
               <div
@@ -49,12 +48,12 @@ const Myskills = () => {
                   flex flex-col gap-2
                   bg-gradient-to-r from-slate-400 to-slate-700 
                   rounded-[10px] justify-center items-center
-                  w-[45%] sm:w-[45%] md:w-[30%] lg:w-[18%] 
-                  h-[250px]
+                  w-[40%] sm:w-[100%] md:w-[22%] lg:w-[13%]
+                  h-[200px]
                 "
               >
-                <div className="text-6xl">{skill.icon}</div>
-                <h2 className='py-[15px] w-full text-center text-[23px] font-medium font-prymary text-white'>
+                <div className="text-5xl">{skill.icon}</div>
+                <h2 className='py-[10px] w-full text-center text-[20px] font-medium font-prymary text-white'>
                   {skill.name}
                 </h2>
               </div>
