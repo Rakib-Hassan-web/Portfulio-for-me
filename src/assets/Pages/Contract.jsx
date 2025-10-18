@@ -2,7 +2,7 @@ import React from 'react';
 
 const Contract = () => {
   return (
-    <section id='Contact' className='pt-[120px] bg-prymary'>
+    <section id='contact' className='pt-[120px] bg-prymary'>
 
       <div className="container mx-auto px-4">
 

@@ -42,7 +42,7 @@ const Services = () => {
     
     
 
-  <section className="bg-prymary  text-white py-26 mb-0 px-6">
+  <section id='services' className="bg-prymary  text-white py-26 mb-0 px-6">
       <h2 className="text-4xl font-bold text-center mb-12">What I Do</h2>
 
       <div className="grid md:grid-cols-3 sm:grid-cols-2 gap-8 max-w-6xl mx-auto">

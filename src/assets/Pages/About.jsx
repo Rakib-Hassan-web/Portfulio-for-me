@@ -10,11 +10,11 @@ const About = () => {
 
   useEffect(() => {
     AOS.init({
-      duration: 1000,   // animation speed
-      once: false,      // allow repeat
-      offset: 0,        // trigger immediately when visible
+      duration: 1000,  
+      once: false,      
+      offset: 0,       
       easing: "ease-in-out",
-      mirror: true,     // re-animate when scrolling up
+      mirror: true,    
     })
     AOS.refresh()
   }, [])

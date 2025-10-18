@@ -9,7 +9,7 @@ import { TiCss3 } from 'react-icons/ti'
 const Myskills = () => {
   return (
     <>
-      <section id='MYSkill' className='pt-[130px] bg-prymary'>
+      <section id='skills' className='pt-[130px] bg-prymary'>
         <div className="container">
           <h2 id='about_title' className='text-center text-[48px] font-bold font-prymary text-white'>
             My Skills
