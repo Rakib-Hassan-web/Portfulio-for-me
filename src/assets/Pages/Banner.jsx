@@ -54,7 +54,7 @@ const Banner = () => {
                   </Link>
 
                   <Link to='https://github.com/Rakib-Hassan-web'>
-                    <FaGithub className='text-3xl text-white hover:text-green-400 hover:scale-[1.3] duration-300' />
+                    <FaGithub className='text-3xl text-white hover:text-white hover:scale-[1.3] duration-300' />
                   </Link>
                 </div>
               </div>

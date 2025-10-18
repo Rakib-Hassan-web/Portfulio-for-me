@@ -107,7 +107,7 @@ const About = () => {
               <h2 className='text-[20px] sm:text-[22px] font-normal font-prymary text-white'>
                 +8801904522130
               </h2>
-            </div>sdfwafa
+            </div>
           </div>
         </div>
       </section>
