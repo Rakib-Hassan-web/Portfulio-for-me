@@ -5,6 +5,7 @@ import About from './About'
 import Services from './Services'
 import Myskills from './Myskills'
 import Contract from './Contract'
+import MyWorks from './MyWorks'
 
 const Home = () => {
   return (
@@ -16,6 +17,7 @@ const Home = () => {
      <Banner/>
      <About/>
      <Services/>
+  <MyWorks/>
   <Myskills/>
   <Contract/>
     
