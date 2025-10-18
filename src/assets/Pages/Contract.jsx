@@ -27,7 +27,7 @@ const Contract = () => {
           </div>
 
           {/* Second Row */}
-          <div className="flex flex-col md:flex-row md:justify-center gap-4 md:gap-10">
+          <div className="flex flex-col md:flex-row md:justify-center gap-4 md:gap-10 mb-20">
             <input
               type="text"
               className='flex-1 py-[18px] pr-4 md:pr-[200px] border-b-2 border-[#4F4F4F] text-[20px] text-[#d5d5d5] font-prymary font-medium outline-none'
@@ -41,7 +41,7 @@ const Contract = () => {
           </div>
 
           {/* Message */}
-          <div className="flex justify-center">
+          <div className="flex justify-center ">
             <input
               type="text"
               className='w-full md:w-[965px] py-[18px] h-[109px] pl-[10px] border-2 border-[#4F4F4F] text-[20px] text-[#d5d5d5] font-prymary font-medium outline-none'
