@@ -35,7 +35,9 @@ const Navbar = () => {
           }`}
         >
           <ul className='flex flex-col items-center gap-4 py-4 text-white font-prymary'>
-            <li className='p-[10px] hover:bg-[#85f994c5] hover:text-black duration-500 w-full text-center'><Link>About me</Link></li>
+      <li className='p-[10px] hover:scale-[1.2] hover:text-black hover:rounded-[15px] hover:bg-[#85f994c5] duration-[.4s]'>
+    <a href="#about">About me</a>
+  </li>
             <li className='p-[10px] hover:bg-[#85f994c5] hover:text-black duration-500 w-full text-center'><Link>Services</Link></li>
             <li className='p-[10px] hover:bg-[#85f994c5] hover:text-black duration-500 w-full text-center'><Link>Skills</Link></li>
             <li className='p-[10px] hover:bg-[#85f994c5] hover:text-black duration-500 w-full text-center'><Link>Contact me</Link></li>
