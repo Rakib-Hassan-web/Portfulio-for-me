@@ -90,7 +90,7 @@ const About = () => {
               <h2 className="text-[22px] font-normal font-prymary text-white">+8801904522130</h2>
             </div>
           </div>
-        </div>
+        </div>adfsdff
       </section>
     </>
   )
