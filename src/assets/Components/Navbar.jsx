@@ -8,7 +8,8 @@ const Navbar = () => {
   return (
     <>
       <section id='navbar' className='py-[40px] bg-prymary'>
-        <div className='container flex justify-between items-center'>
+        <div className='container mx-auto flex justify-between items-center px-4 md:px-0'>
+          {/* Logo */}
           <Link className='text-white font-bold text-[36px] font-prymary'>RHR</Link>
 
           {/* Desktop Menu */}
