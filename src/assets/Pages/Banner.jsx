@@ -8,7 +8,7 @@ import { TbBrandLinkedinFilled } from 'react-icons/tb'
 const Banner = () => {
   return (
     <>
-      <section id='banner' className='py-[70px] mb-500 bg-prymary'>
+      <section id='banner' className='py-[70px]  bg-prymary'>
         <div className='container'>
           <div className='banner_main flex flex-col-reverse lg:flex-row items-center justify-between gap-10 lg:gap-[150px] px-5'>
 
