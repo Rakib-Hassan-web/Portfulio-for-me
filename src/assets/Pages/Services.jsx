@@ -1,65 +1,99 @@
-import React, { useState } from "react";
-import { FaCode, FaLaptopCode, FaPenNib, FaMobileAlt, FaUsers, FaLightbulb } from "react-icons/fa";
+import React, { useState } from 'react'
+import {
+  FaCode,
+  FaLaptopCode,
+  FaPaintBrush,
+  FaMobileAlt,
+  FaUsers,
+  FaLightbulb,
+} from 'react-icons/fa'
 
-const services = [
-  {
-    id: 1,
-    title: "Software Development",
-    icon: <FaCode />,
-    desc: "Building scalable software with modern technologies.",
-    details: "I work with Node.js, Python, and cloud deployment for production-ready systems."
-  },
-  {
-    id: 2,
-    title: "Web Development",
-    icon: <FaLaptopCode />,
-    desc: "Modern, secure, and responsive websites.",
-    details: "I create web apps using React, Tailwind, and backend APIs."
-  },
-  {
-    id: 3,
-    title: "Web Design",
-    icon: <FaPenNib />,
-    desc: "User-friendly and attractive website layouts.",
-    details: "Focus on UI/UX, color theory, and layout balance."
-  },
-];
+const Services = () => {
+  const [activeIndex, setActiveIndex] = useState(null)
 
-const WhatIDo = () => {
-  const [active, setActive] = useState(null);
+  const handleToggle = (index) => {
+    setActiveIndex(activeIndex === index ? null : index)
+  }
 
-  const toggle = (id) => {
-    setActive(active === id ? null : id);
-  };
+  const services = [
+    {
+      icon: <FaCode className="text-4xl text-green-400" />,
+      title: 'Software Development',
+      desc: 'Building efficient, scalable, and high-performance software solutions.',
+      details:
+        'I build robust applications using Node.js, Python, and databases like MongoDB or PostgreSQL. My focus is on performance and scalability for real-world production.',
+    },
+    {
+      icon: <FaLaptopCode className="text-4xl text-green-400" />,
+      title: 'Web Development',
+      desc: 'Creating modern, responsive, and secure web applications.',
+      details:
+        'I specialize in React, Tailwind CSS, and RESTful API integration. I ensure responsive layouts, optimized performance, and secure code practices.',
+    },
+    {
+      icon: <FaPaintBrush className="text-4xl text-green-400" />,
+      title: 'Web Design',
+      desc: 'Designing user-friendly and attractive website layouts.',
+      details:
+        'From concept to creation, I design clean, minimal, and visually engaging interfaces using Figma and Adobe XD.',
+    },
+    {
+      icon: <FaMobileAlt className="text-4xl text-green-400" />,
+      title: 'Responsive Web Design',
+      desc: 'Ensuring seamless user experience across all devices.',
+      details:
+        'Every design I create is fully responsive and optimized for mobile, tablet, and desktop views using modern CSS frameworks.',
+    },
+    {
+      icon: <FaUsers className="text-4xl text-green-400" />,
+      title: 'UX Integration',
+      desc: 'Crafting smooth and engaging user experiences with proper UX design.',
+      details:
+        'I use data-driven design decisions and user feedback to craft interfaces that are both intuitive and enjoyable.',
+    },
+    {
+      icon: <FaLightbulb className="text-4xl text-green-400" />,
+      title: 'Creative Solutions',
+      desc: 'Innovative approaches to solve problems effectively.',
+      details:
+        'I love solving complex challenges with creative coding, ensuring functionality meets aesthetics.',
+    },
+  ]
 
   return (
-    <section className="bg-[#0B0B0B] text-white py-20">
-      <div className="container mx-auto">
-        <h2 className="text-4xl font-bold text-center mb-10">What I Do</h2>
+    <>
+      <section id="services" className="bg-prymary text-white py-26 mb-0 px-6">
+        <h2 className="text-4xl font-bold text-center mb-12">What I Do</h2>
 
-        <div className="grid md:grid-cols-3 gap-8">
-          {services.map((item) => (
+        <div className="grid md:grid-cols-3 sm:grid-cols-2 gap-8 max-w-6xl mx-auto">
+          {services.map((service, index) => (
             <div
-              key={item.id}
-              onClick={() => toggle(item.id)}
-              className={`p-8 rounded-2xl bg-[#081229] border transition duration-300 cursor-pointer ${
-                active === item.id ? "border-green-400 shadow-lg shadow-green-400/20" : "border-transparent"
+              key={index}
+              onClick={() => handleToggle(index)}
+              className={`bg-gray-900 border rounded-2xl p-6 text-center cursor-pointer shadow-md transition duration-300 ease-in-out hover:-translate-y-2 ${
+                activeIndex === index
+                  ? 'border-green-400 shadow-green-500/30'
+                  : 'border-green-700 hover:shadow-green-600'
               }`}
             >
-              <div className="flex flex-col items-center text-center gap-3">
-                <div className="text-green-400 text-4xl">{item.icon}</div>
-                <h3 className="text-xl font-semibold">{item.title}</h3>
-                <p className="text-gray-400">{item.desc}</p>
-                {active === item.id && (
-                  <p className="mt-3 text-gray-300 text-sm">{item.details}</p>
-                )}
+              <div className="flex justify-center mb-4">{service.icon}</div>
+              <h3 className="text-xl font-semibold mb-2">{service.title}</h3>
+              <p className="text-gray-400 text-sm">{service.desc}</p>
+
+          
+              <div
+                className={`overflow-hidden transition-all duration-500 ease-in-out ${
+                  activeIndex === index ? 'max-h-40 mt-3' : 'max-h-0'
+                }`}
+              >
+                <p className="text-gray-300 text-sm">{service.details}</p>
               </div>
             </div>
           ))}
         </div>
-      </div>
-    </section>
-  );
-};
+      </section>
+    </>
+  )
+}
 
-export default WhatIDo;
+export default Services
