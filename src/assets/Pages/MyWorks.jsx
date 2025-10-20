@@ -17,7 +17,7 @@ const MyWorks = () => {
       <h2 className="text-4xl font-bold text-center mb-12">My Projects</h2>
 
 
-      <div className='flex items-center justify-between'>
+      <div className='flex items-center justify-between mb-32'>
 
 
 {/* --------------1st cart------- */}
