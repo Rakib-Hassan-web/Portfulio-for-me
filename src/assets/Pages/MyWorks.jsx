@@ -23,6 +23,10 @@ const MyWorks = () => {
 
         <div  className=' w-70 h-100 bg-blue-300 rounded-2xl'>
           <img src="#" alt="image" className='bg-gray-600 w-full h-70 rounded-2xl ' />
+          <div>
+            <h2>project name</h2>
+            <h2>whic elements ar use in this project ( like : html ,css ,react ,js)</h2>
+          </div>
                
         </div>
 
