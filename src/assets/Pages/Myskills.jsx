@@ -68,7 +68,9 @@ const Myskills = () => {
                   h-[200px]
                   transform transition-all duration-500 ease-out
                   hover:scale-110 hover:shadow-[0_0_25px_rgba(56,189,248,0.6)]
-                  hover:rotate-[2deg]
+                  hover:rotate-[3deg]
+                   hover:duration-500
+
                 "
                 data-aos="zoom-in-up"
                 data-aos-delay={index * 100}
@@ -76,7 +78,7 @@ const Myskills = () => {
                 <div className="text-5xl transition-transform duration-500 group-hover:scale-125">
                   {skill.icon}
                 </div>
-                <h2 className="py-[10px] w-full text-center text-[20px] font-medium font-prymary text-white transition-all duration-500 group-hover:text-cyan-300">
+                <h2 className="py-[10px] w-full text-center text-[20px] font-medium font-prymary text-white transition-all duration-500 group-hover:text-black">
                   {skill.name}
                 </h2>
               </div>
