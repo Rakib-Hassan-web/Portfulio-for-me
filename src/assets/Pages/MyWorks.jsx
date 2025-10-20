@@ -22,7 +22,7 @@ const MyWorks = () => {
 
 {/* --------------1st cart------- */}
 
-        <div  className=' w-70 h-100 bg-blue-300 rounded-2xl'>
+        <div  className=' w-70 h-100 bg-blue-300 rounded-2xl '>
           <Link>
           <img src="#" alt="image" className='bg-gray-600 w-full h-70 rounded-2xl ' />
           <div>
@@ -99,6 +99,7 @@ const MyWorks = () => {
 
 
       {/* /-----------------button--------- */}
+      <Link className='  font-prymary font-bold text-green-500 flex justify-center text-2xl'>Show More...</Link>
       </div>
 
 
