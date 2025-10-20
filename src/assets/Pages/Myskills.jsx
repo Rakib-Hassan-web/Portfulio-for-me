@@ -60,7 +60,7 @@ const Myskills = () => {
                 key={index}
                 className="
                   singl_skill 
-                  hover:scale-[1.1] duration-300
+                  hover:scale-[1.1] hover:duration-300
                   flex flex-col gap-2
                   bg-gradient-to-r from-slate-400 to-slate-700 
                   rounded-[10px] justify-center items-center
