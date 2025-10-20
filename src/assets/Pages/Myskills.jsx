@@ -16,17 +16,7 @@ const Myskills = () => {
           </h2>
 
           <div
-            className="
-              skilRow 
-              pt-[73px] 
-              flex 
-              flex-wrap 
-              justify-center 
-              gap-8 
-              sm:gap-6 
-              md:gap-10
-            "
-          >
+ 
 
             {[
               { icon: <FaReact style={{ color: '#61DAFB' }} />, name: 'React' },
