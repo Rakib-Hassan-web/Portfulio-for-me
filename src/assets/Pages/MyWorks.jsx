@@ -21,8 +21,8 @@ const MyWorks = () => {
 
 
 
-        <div  className=''>
-          <img src="#" alt="image" className='bg-gray-600 w-70 h-90 rounded-2xl ' />
+        <div  className=' w-70 h-100 bg-blue-300 rounded-2xl'>
+          <img src="#" alt="image" className='bg-gray-600 w-full h-70 rounded-2xl ' />
                
         </div>
 
