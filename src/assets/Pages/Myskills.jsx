@@ -21,15 +21,7 @@ const Myskills = () => {
             {[
               { icon: <FaReact style={{ color: '#61DAFB' }} />, name: 'React' },
  
-                  singl_skill 
-                  hover:scale-[1.1] duration-[.4s] 
-                  flex flex-col gap-2
-                  bg-gradient-to-r from-slate-400 to-slate-700 
-                  rounded-[10px] justify-center items-center
-                  w-[40%] sm:w-[100%] md:w-[22%] lg:w-[13%]
-                  h-[200px]
-                "
-              >
+
                 <div className="text-5xl">{skill.icon}</div>
                 <h2 className='py-[10px] w-full text-center text-[20px] font-medium font-prymary text-white'>
                   {skill.name}
