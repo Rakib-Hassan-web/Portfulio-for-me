@@ -20,19 +20,7 @@ const Myskills = () => {
 
             {[
               { icon: <FaReact style={{ color: '#61DAFB' }} />, name: 'React' },
-              { icon: <FaHtml5 style={{ color: '#E34F26' }} />, name: 'HTML5' },
-              { icon: <RiTailwindCssFill style={{ color: '#38BDF8' }} />, name: 'Tailwind CSS' },
-              { icon: <TiCss3 style={{ color: '#1572B6' }} />, name: 'CSS3' },
-              { icon: <FaBootstrap style={{ color: '#fff' }} />, name: 'Bootstrap' },
-              { icon: <FaFigma style={{ color: '#F24E1E' }} />, name: 'Figma' },
-              { icon: <IoLogoJavascript style={{ color: '#F7DF1E' }} />, name: 'JavaScript' },
-              { icon: <IoLogoFirebase style={{ color: '#FFCA28' }} />, name: 'Firebase' },
-              { icon: <SiRedux style={{ color: '#e44d26' }} />, name: 'Redux' },
-              { icon: <FaGithub style={{ color: '#181717' }} />, name: 'Github' },
-            ].map((skill, index) => (
-              <div
-                key={index}
-                className="
+ 
                   singl_skill 
                   hover:scale-[1.1] duration-[.4s] 
                   flex flex-col gap-2
