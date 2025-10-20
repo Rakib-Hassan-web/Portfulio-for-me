@@ -11,10 +11,10 @@ import 'aos/dist/aos.css'
 const Myskills = () => {
   useEffect(() => {
     AOS.init({
-      duration: 1000, // animation duration
-      offset: 120, // offset (in px) from the original trigger point
-      once: true, // animation happens only once
-      easing: 'ease-in-out', // smooth animation
+      duration: 1000,
+      offset: 120,
+      once: true,
+      easing: 'ease-in-out',
     })
   }, [])
 
@@ -60,20 +60,16 @@ const Myskills = () => {
                 key={index}
                 className="
                   singl_skill 
-                  hover:scale-[1.1] hover:duration-300
+                  group
                   flex flex-col gap-2
                   bg-gradient-to-r from-slate-400 to-slate-700 
                   rounded-[10px] justify-center items-center
                   w-[40%] sm:w-[100%] md:w-[22%] lg:w-[13%]
                   h-[200px]
-                "
-                data-aos="zoom-in-up"
-                data-aos-delay={index * 100} // stagger effect
-              >
-                <div className="text-5xl">{skill.icon}</div>
-                <h2 className="py-[10px] w-full text-center text-[20px] font-medium font-prymary text-white">
-                  {skill.name}
-                </h2>
+                  transform transition-all duration-500 ease-out
+                  hover:scale-110 hover:shadow-[0_0_25px_rgba(56,189,248,0.6)]
+                  hover:rotate-[2deg]
+
               </div>
             ))}
           </div>
