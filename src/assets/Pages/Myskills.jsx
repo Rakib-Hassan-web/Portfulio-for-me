@@ -23,7 +23,7 @@ const Myskills = () => {
     { icon: <FaHtml5 style={{ color: '#E34F26' }} />, name: 'HTML5' },
     { icon: <RiTailwindCssFill style={{ color: '#38BDF8' }} />, name: 'Tailwind CSS' },
     { icon: <TiCss3 style={{ color: '#1572B6' }} />, name: 'CSS3' },
-    { icon: <FaBootstrap style={{ color: '#7952B3' }} />, name: 'Bootstrap' },
+    { icon: <FaBootstrap style={{ color: '#fff' }} />, name: 'Bootstrap' },
     { icon: <FaFigma style={{ color: '#F24E1E' }} />, name: 'Figma' },
     { icon: <IoLogoJavascript style={{ color: '#F7DF1E' }} />, name: 'JavaScript' },
     { icon: <IoLogoFirebase style={{ color: '#FFCA28' }} />, name: 'Firebase' },
@@ -58,6 +58,8 @@ const Myskills = () => {
             {skills.map((skill, index) => (
               <div
                 key={index}
+                data-aos="zoom-in-up"
+                data-aos-delay={index * 100}
                 className="
                   singl_skill 
                   group
@@ -66,17 +68,19 @@ const Myskills = () => {
                   rounded-[10px] justify-center items-center
                   w-[40%] sm:w-[100%] md:w-[22%] lg:w-[13%]
                   h-[200px]
-                  transform transition-all duration-[800ms] ease-[cubic-bezier(0.4,0,0.2,1)]
-                  hover:scale-110 hover:shadow-[0_0_25px_rgba(56,189,248,0.6)]
-                  hover:rotate-[3deg]
+                  transition-transform transition-shadow transition-colors
+                  duration-[800ms] ease-[cubic-bezier(0.4,0,0.2,1)]
+                  hover:scale-[1.08] hover:rotate-[2deg]
+                  hover:shadow-[0_0_30px_rgba(56,189,248,0.6)]
                 "
-                data-aos="zoom-in-up"
-                data-aos-delay={index * 100}
+                style={{
+                  willChange: 'transform, box-shadow',
+                }}
               >
-                <div className="text-5xl transition-transform duration-[800ms] ease-[cubic-bezier(0.4,0,0.2,1)] group-hover:scale-125">
+                <div className="text-5xl transform transition-transform duration-[800ms] ease-[cubic-bezier(0.4,0,0.2,1)] group-hover:scale-125">
                   {skill.icon}
                 </div>
-                <h2 className="py-[10px] w-full text-center text-[20px] font-medium font-prymary text-white transition-all duration-[800ms] ease-[cubic-bezier(0.4,0,0.2,1)] group-hover:text-black">
+                <h2 className="py-[10px] w-full text-center text-[20px] font-medium font-prymary text-white transition-colors duration-[800ms] ease-[cubic-bezier(0.4,0,0.2,1)] group-hover:text-black">
                   {skill.name}
                 </h2>
               </div>
