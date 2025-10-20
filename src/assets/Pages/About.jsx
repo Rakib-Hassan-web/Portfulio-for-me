@@ -89,7 +89,7 @@ const About = () => {
               <h2 className="text-[18px] font-normal font-prymary text-white mt-[18px]">Phone</h2>
               <h2 className="text-[22px] font-normal font-prymary text-white">+8801904522130</h2>
             </div>
-          </div>asdf
+          </div>
         </div>
       </section>
     </>
