@@ -17,7 +17,7 @@ const MyWorks = () => {
       <h2 className="text-4xl font-bold text-center mb-12">My Projects</h2>
 
 
-      <div>
+      <div className='flex items-center justify-between'>
 
 
 {/* --------------1st cart------- */}
@@ -92,6 +92,13 @@ const MyWorks = () => {
 
 
       </div>
+
+
+
+
+
+
+      {/* /-----------------button--------- */}
       </div>
 
 
