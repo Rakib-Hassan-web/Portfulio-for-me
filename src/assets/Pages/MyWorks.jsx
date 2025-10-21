@@ -77,8 +77,8 @@ const MyWorks = () => {
 
                {/* 6th card */}
           <div className='w-full sm:w-1/2 md:w-1/3 lg:w-1/5 h-80 bg-[#fff] rounded-2xl'>
-            <Link to={'https://calculator-with-js-plum.vercel.app/'} target='blank'>
-              <img src={thum5} alt="image" className='bg-gray-600 w-full h-50 rounded-2xl' />
+            <Link to={'https://furniture-project-with-html-and-css.vercel.app/'} target='blank'>
+              <img src={thum6} alt="image" className='bg-gray-600 w-full h-50 rounded-2xl' />
               <div className='mt-10'>
                 <h2 className='font-prymary text-base text-black font-bold text-center'>
                   LANDING PAGE <span className='block'>( HTML , CSS )</span>
