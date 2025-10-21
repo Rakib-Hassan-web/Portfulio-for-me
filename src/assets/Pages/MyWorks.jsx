@@ -5,6 +5,7 @@ import thum2 from '../image/Thumbnail Post.png'
 import thum3 from '../image/Frame 2.png'
 import thum4 from '../image/the-pros-and-cons-of-paper-to-do-lists.jpeg'
 import thum5 from '../image/Screenshot 2025-10-22 010345.png'
+import thum6 from '../image/Thumbnail.png'
 
 const MyWorks = () => {
   return (
@@ -74,13 +75,13 @@ const MyWorks = () => {
             </Link>
           </div>
 
-               {/* 5th card */}
+               {/* 6th card */}
           <div className='w-full sm:w-1/2 md:w-1/3 lg:w-1/5 h-80 bg-[#fff] rounded-2xl'>
             <Link to={'https://calculator-with-js-plum.vercel.app/'} target='blank'>
               <img src={thum5} alt="image" className='bg-gray-600 w-full h-50 rounded-2xl' />
               <div className='mt-10'>
                 <h2 className='font-prymary text-base text-black font-bold text-center'>
-                  CALCULATOR <span className='block'>( HTML , CSS , JS)</span>
+                  LANDING PAGE <span className='block'>( HTML , CSS )</span>
                 </h2>
               </div>
             </Link>
