@@ -1,4 +1,6 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 import {
   FaCode,
   FaLaptopCode,
@@ -10,6 +12,19 @@ import {
 
 const Services = () => {
   const [activeIndex, setActiveIndex] = useState(null)
+  const [isMobile, setIsMobile] = useState(false)
+
+  useEffect(() => {
+    // Detect small device
+    const checkMobile = () => setIsMobile(window.innerWidth < 640)
+    checkMobile()
+    window.addEventListener('resize', checkMobile)
+
+    // Initialize AOS
+    AOS.init({ duration: 800, once: true })
+
+    return () => window.removeEventListener('resize', checkMobile)
+  }, [])
 
   const handleToggle = (index) => {
     setActiveIndex(activeIndex === index ? null : index)
@@ -17,7 +32,7 @@ const Services = () => {
 
   const services = [
     {
-      icon: <FaCode className="text-4xl text-green-400" />,
+      icon: <FaCode className="text-4xl text-green-400 font-prymary" />,
       title: 'Software Development',
       desc: 'Building efficient, scalable, and high-performance software solutions.',
       details:
@@ -61,38 +76,35 @@ const Services = () => {
   ]
 
   return (
-    <>
-      <section id="services" className="bg-prymary text-white py-26 mb-0 px-6">
-        <h2 className="text-4xl font-bold text-center mb-12">What I Do</h2>
+    <section id="services" className="bg-prymary text-white py-26 mb-0 px-6">
+      <h2 className="text-4xl font-bold text-center mb-12">What I Do</h2>
 
-        <div className="grid md:grid-cols-3 sm:grid-cols-2 gap-8 max-w-6xl mx-auto">
-          {services.map((service, index) => (
-            <div
-              key={index}
-              onClick={() => handleToggle(index)}
-              className={`bg-gray-900 border rounded-2xl p-6 text-center cursor-pointer shadow-md transition duration-300 ease-in-out hover:-translate-y-2 ${
-                activeIndex === index
-                  ? 'border-green-400 shadow-green-500/30'
-                  : 'border-green-700 hover:shadow-green-600'
-              }`}
-            >
-              <div className="flex justify-center mb-4">{service.icon}</div>
-              <h3 className="text-xl font-semibold mb-2">{service.title}</h3>
-              <p className="text-gray-400 text-sm">{service.desc}</p>
+      <div className="grid md:grid-cols-3 sm:grid-cols-2 gap-8 max-w-6xl mx-auto">
+        {services.map((service, index) => (
+         <div
+  key={index}
+  onClick={() => handleToggle(index)}
+  data-aos={isMobile ? 'fade-up' : index % 2 === 0 ? 'fade-right' : 'fade-left'}
+  className={`bg-gray-900 border rounded-2xl p-6 text-center cursor-pointer shadow-md hover:-translate-y-2 transition-transform duration-300 ease-in-out ${
+    activeIndex === index
+      ? 'border-green-400 shadow-green-500/30'
+      : 'border-green-700 hover:shadow-green-600'
+  }`}
+>
+  <div className="flex justify-center mb-4">{service.icon}</div>
+  <h3 className="text-xl font-semibold mb-2">{service.title}</h3>
+  <p className="text-gray-400 text-sm">{service.desc}</p>
 
-          
-              <div
-                className={`overflow-hidden transition-all duration-500 ease-in-out ${
-                  activeIndex === index ? 'max-h-40 mt-3' : 'max-h-0'
-                }`}
-              >
-                <p className="text-gray-300 text-sm">{service.details}</p>
-              </div>
-            </div>
-          ))}
-        </div>
-      </section>
-    </>
+  <div
+    className={`overflow-hidden ${activeIndex === index ? 'max-h-40 mt-3' : 'max-h-0'} transition-[max-height] duration-500 ease-in-out`}
+  >
+    <p className="text-gray-300 text-sm font-prymary">{service.details}</p>
+  </div>
+</div>
+
+        ))}
+      </div>
+    </section>
   )
 }
 
