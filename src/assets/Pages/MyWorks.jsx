@@ -3,6 +3,7 @@ import React from 'react'
 import { FaCode, FaLaptopCode, FaPaintBrush, FaMobileAlt, FaUsers, FaLightbulb } from "react-icons/fa";
 import { Link } from 'react-router';
 import thum1 from '../image/Thumbnail.jpg'
+import thum2 from '../image/Thumbnail Post.png'
 
 const MyWorks = () => {
 
@@ -41,10 +42,10 @@ const MyWorks = () => {
 {/* --------------2nd cart------- */}
 
         <div  className=' w-70 h-80 bg-[#fff] rounded-2xl '>
-          <Link to={'https://e-commarce-project-nexton.vercel.app/'} target=' blank' >
-          <img src={thum1} alt="image" className='bg-gray-600 w-full h-50 rounded-2xl  ' />
+          <Link to={'https://furniture-e-commarche-project-with.vercel.app/'} target=' blank' >
+          <img src={thum2} alt="image" className='bg-gray-600 w-full h-50 rounded-2xl  ' />
           <div className='mt-10'>
-            <h2 className=' font-prymary text-base text-black font-bold text-center'> NEXTON E-Commerce Project  <span className=' block'> ( React JS)</span></h2>
+            <h2 className=' font-prymary text-base text-black font-bold text-center'> FANITURE E-Commerce Project  <span className=' block'> ( React JS)</span></h2>
             
 
           
