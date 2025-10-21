@@ -33,7 +33,7 @@ const Myskills = () => {
 
   return (
     <>
-      <section id="skills" className="pt-[130px] bg-prymary">
+      <section id="skills" className="pt-[90px] bg-prymary">
         <div className="container">
           <h2
             id="about_title"
