@@ -55,12 +55,16 @@ const MyWorks = () => {
 
 
 
-        <div  className=' w-70 h-100 bg-blue-300 rounded-2xl'>
-          <Link>
-          <img src="#" alt="image" className='bg-gray-600 w-full h-70 rounded-2xl ' />
-          <div>
-            <h2>project name</h2>
-            <h2>whic elements ar use in this project ( like : html ,css ,react ,js)</h2>
+{/* --------------2nd cart------- */}
+
+        <div  className=' w-70 h-80 bg-[#fff] rounded-2xl '>
+          <Link to={'https://furniture-e-commarche-project-with.vercel.app/'} target=' blank' >
+          <img src={thum2} alt="image" className='bg-gray-600 w-full h-50 rounded-2xl  ' />
+          <div className='mt-10'>
+            <h2 className=' font-prymary text-base text-black font-bold text-center'> FANITURE E-Commerce Project  <span className=' block'> ( React JS)</span></h2>
+            
+
+          
           </div>
                </Link>
         </div>
@@ -68,12 +72,18 @@ const MyWorks = () => {
 
 
 
-        <div  className=' w-70 h-100 bg-blue-300 rounded-2xl'>
-          <Link>
-          <img src="#" alt="image" className='bg-gray-600 w-full h-70 rounded-2xl ' />
-          <div>
-            <h2>project name</h2>
-            <h2>whic elements ar use in this project ( like : html ,css ,react ,js)</h2>
+
+
+{/* --------------2nd cart------- */}
+
+        <div  className=' w-70 h-80 bg-[#fff] rounded-2xl '>
+          <Link to={'https://furniture-e-commarche-project-with.vercel.app/'} target=' blank' >
+          <img src={thum2} alt="image" className='bg-gray-600 w-full h-50 rounded-2xl  ' />
+          <div className='mt-10'>
+            <h2 className=' font-prymary text-base text-black font-bold text-center'> FANITURE E-Commerce Project  <span className=' block'> ( React JS)</span></h2>
+            
+
+          
           </div>
                </Link>
         </div>
