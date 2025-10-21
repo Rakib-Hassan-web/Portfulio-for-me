@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 import {
@@ -11,7 +11,6 @@ import {
 } from 'react-icons/fa'
 
 const Services = () => {
-  const [activeIndex, setActiveIndex] = useState(null)
   const [isMobile, setIsMobile] = useState(false)
 
   useEffect(() => {
@@ -25,10 +24,6 @@ const Services = () => {
 
     return () => window.removeEventListener('resize', checkMobile)
   }, [])
-
-  const handleToggle = (index) => {
-    setActiveIndex(activeIndex === index ? null : index)
-  }
 
   const services = [
     {
@@ -81,27 +76,16 @@ const Services = () => {
 
       <div className="grid md:grid-cols-3 sm:grid-cols-2 gap-8 max-w-6xl mx-auto">
         {services.map((service, index) => (
-         <div
-  key={index}
-  onClick={() => handleToggle(index)}
-  data-aos={isMobile ? 'fade-up' : index % 2 === 0 ? 'fade-right' : 'fade-left'}
-  className={`bg-gray-900 border rounded-2xl p-6 text-center cursor-pointer shadow-md hover:-translate-y-2 transition-transform duration-300 ease-in-out ${
-    activeIndex === index
-      ? 'border-green-400 shadow-green-500/30'
-      : 'border-green-700 hover:shadow-green-600'
-  }`}
->
-  <div className="flex justify-center mb-4">{service.icon}</div>
-  <h3 className="text-xl font-semibold mb-2">{service.title}</h3>
-  <p className="text-gray-400 text-sm">{service.desc}</p>
-
-  <div
-    className={`overflow-hidden ${activeIndex === index ? 'max-h-40 mt-3' : 'max-h-0'} transition-[max-height] duration-500 ease-in-out`}
-  >
-    <p className="text-gray-300 text-sm font-prymary">{service.details}</p>
-  </div>
-</div>
-
+          <div
+            key={index}
+            data-aos={isMobile ? 'fade-up' : index % 2 === 0 ? 'fade-right' : 'fade-left'}
+            className="bg-gray-900 border rounded-2xl p-6 text-center cursor-pointer shadow-md hover:-translate-y-2 transition-transform duration-300 ease-in-out border-green-700 hover:shadow-green-600"
+          >
+            <div className="flex justify-center mb-4">{service.icon}</div>
+            <h3 className="text-xl font-semibold mb-2">{service.title}</h3>
+            <p className="text-gray-400 text-sm">{service.desc}</p>
+            {/* Details removed from click expand */}
+          </div>
         ))}
       </div>
     </section>
