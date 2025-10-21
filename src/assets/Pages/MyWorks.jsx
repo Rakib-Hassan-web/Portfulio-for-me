@@ -4,6 +4,7 @@ import { FaCode, FaLaptopCode, FaPaintBrush, FaMobileAlt, FaUsers, FaLightbulb }
 import { Link } from 'react-router';
 import thum1 from '../image/Thumbnail.jpg'
 import thum2 from '../image/Thumbnail Post.png'
+import thum3 from '../image/Frame 2.png'
 
 const MyWorks = () => {
 
@@ -39,7 +40,28 @@ const MyWorks = () => {
 
 
 
+
+
 {/* --------------2nd cart------- */}
+
+        <div  className=' w-70 h-80 bg-[#fff] rounded-2xl '>
+          <Link to={'https://furniture-e-commarche-project-with.vercel.app/'} target=' blank' >
+          <img src={thum3} alt="image" className='bg-gray-600 w-full h-50 rounded-2xl  ' />
+          <div className='mt-10'>
+            <h2 className=' font-prymary text-base text-black font-bold text-center'> FANITURE E-Commerce Project  <span className=' block'> ( React JS)</span></h2>
+            
+
+          
+          </div>
+               </Link>
+        </div>
+
+
+
+
+
+
+{/* --------------3rd cart------- */}
 
         <div  className=' w-70 h-80 bg-[#fff] rounded-2xl '>
           <Link to={'https://furniture-e-commarche-project-with.vercel.app/'} target=' blank' >
@@ -52,23 +74,6 @@ const MyWorks = () => {
           </div>
                </Link>
         </div>
-
-
-
-{/* --------------2nd cart------- */}
-
-        <div  className=' w-70 h-80 bg-[#fff] rounded-2xl '>
-          <Link to={'https://furniture-e-commarche-project-with.vercel.app/'} target=' blank' >
-          <img src={thum2} alt="image" className='bg-gray-600 w-full h-50 rounded-2xl  ' />
-          <div className='mt-10'>
-            <h2 className=' font-prymary text-base text-black font-bold text-center'> FANITURE E-Commerce Project  <span className=' block'> ( React JS)</span></h2>
-            
-
-          
-          </div>
-               </Link>
-        </div>
-
 
 
 
