@@ -27,20 +27,26 @@ const MyWorks = () => {
           <Link to={'https://e-commarce-project-nexton.vercel.app/'} target=' blank' >
           <img src={thum1} alt="image" className='bg-gray-600 w-full h-50 rounded-2xl  ' />
           <div className='mt-10'>
-            <h2 className=' font-prymary text-base text-black font-bold text-center'>NEXTON E-Commerce Project</h2>
+            <h2 className=' font-prymary text-base text-black font-bold text-center'> NEXTON E-Commerce Project  <span className=' block'> ( React JS)</span></h2>
+            
+
           
           </div>
                </Link>
         </div>
 
 
-{/* --------------1st cart------- */}
+
+
+{/* --------------2nd cart------- */}
 
         <div  className=' w-70 h-80 bg-[#fff] rounded-2xl '>
           <Link to={'https://e-commarce-project-nexton.vercel.app/'} target=' blank' >
           <img src={thum1} alt="image" className='bg-gray-600 w-full h-50 rounded-2xl  ' />
           <div className='mt-10'>
-            <h2 className=' font-prymary text-base text-black font-bold text-center'>NEXTON E-Commerce Project</h2>
+            <h2 className=' font-prymary text-base text-black font-bold text-center'> NEXTON E-Commerce Project  <span className=' block'> ( React JS)</span></h2>
+            
+
           
           </div>
                </Link>
