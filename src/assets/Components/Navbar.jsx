@@ -21,6 +21,7 @@ const Navbar = () => {
           <ul className='flex items-center gap-10 text-white text-[18px] font-normal font-prymary'>
             <li><ScrollLink to="about" smooth={true} duration={700} offset={-80} className='cursor-pointer hover:text-[#85f994c5] duration-300  hover:scale-105'>About me</ScrollLink></li>
             <li><ScrollLink to="services" smooth={true} duration={700} offset={-80} className='cursor-pointer hover:text-[#85f994c5] duration-300  hover:scale-105'>Services</ScrollLink></li>
+            <li><ScrollLink to="works" smooth={true} duration={700} offset={-80} className='cursor-pointer hover:text-[#85f994c5] duration-300  hover:scale-105'>My</ScrollLink></li>
             <li><ScrollLink to="skills" smooth={true} duration={700} offset={-80} className='cursor-pointer hover:text-[#85f994c5] duration-300  hover:scale-105'>Skills</ScrollLink></li>
             <li><ScrollLink to="contact" smooth={true} duration={700} offset={-80} className='cursor-pointer hover:text-[#85f994c5] duration-300  hover:scale-105'>Contact me</ScrollLink></li>
           </ul>
@@ -38,6 +39,7 @@ const Navbar = () => {
           <li><ScrollLink to="banner" smooth={true} duration={700} offset={-80} className='cursor-pointer hover:text-[#85f994c5] duration-300' onClick={handleLinkClick}>Home</ScrollLink></li>
           <li><ScrollLink to="about" smooth={true} duration={700} offset={-80} className='cursor-pointer hover:text-[#85f994c5] duration-300' onClick={handleLinkClick}>About me</ScrollLink></li>
           <li><ScrollLink to="services" smooth={true} duration={700} offset={-80} className='cursor-pointer hover:text-[#85f994c5] duration-300' onClick={handleLinkClick}>Services</ScrollLink></li>
+          <li><ScrollLink to="works" smooth={true} duration={700} offset={-80} className='cursor-pointer hover:text-[#85f994c5] duration-300' onClick={handleLinkClick}>My Works</ScrollLink></li>
           <li><ScrollLink to="skills" smooth={true} duration={700} offset={-80} className='cursor-pointer hover:text-[#85f994c5] duration-300' onClick={handleLinkClick}>Skills</ScrollLink></li>
           <li><ScrollLink to="contact" smooth={true} duration={700} offset={-80} className='cursor-pointer hover:text-[#85f994c5] duration-300' onClick={handleLinkClick}>Contact me</ScrollLink></li>
         </ul>

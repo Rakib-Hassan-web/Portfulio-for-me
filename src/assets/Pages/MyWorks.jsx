@@ -9,7 +9,7 @@ import thum6 from '../image/Thumbnail.png'
 
 const MyWorks = () => {
   return (
-    <section className="bg-prymary text-white py-15 mb-0 px-6">
+    <section  id='works'  className="bg-prymary text-white py-15 mb-0 px-6">
       <div className="container mx-auto">
         <h2 className="text-4xl font-bold text-center mb-12">My Projects</h2>
 

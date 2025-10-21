@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import {
   FaCode,
   FaLaptopCode,
@@ -10,7 +10,6 @@ import {
 
 const Services = () => {
   const [activeIndex, setActiveIndex] = useState(null)
-  const [animate, setAnimate] = useState([])
 
   const handleToggle = (index) => {
     setActiveIndex(activeIndex === index ? null : index)
@@ -18,7 +17,7 @@ const Services = () => {
 
   const services = [
     {
-      icon: <FaCode className="text-4xl text-green-400" />,
+      icon: <FaCode className="text-4xl text-green-400 font-prymary" />,
       title: 'Software Development',
       desc: 'Building efficient, scalable, and high-performance software solutions.',
       details:
@@ -61,37 +60,19 @@ const Services = () => {
     },
   ]
 
-  // AOS-like animation
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrollPos = window.scrollY + window.innerHeight
-      const elements = document.querySelectorAll('.fade-up')
-      elements.forEach((el, idx) => {
-        if (scrollPos > el.offsetTop + 50 && !animate.includes(idx)) {
-          setAnimate((prev) => [...prev, idx])
-        }
-      })
-    }
-    window.addEventListener('scroll', handleScroll)
-    handleScroll()
-    return () => window.removeEventListener('scroll', handleScroll)
-  }, [animate])
-
   return (
-    <section id="services" className="bg-gray-900 text-white py-16 px-4">
+    <section id="services" className="bg-prymary text-white py-26 px-6">
       <h2 className="text-4xl font-bold text-center mb-12">What I Do</h2>
       <div className="grid md:grid-cols-3 sm:grid-cols-2 gap-8 max-w-6xl mx-auto">
         {services.map((service, index) => (
           <div
             key={index}
             onClick={() => handleToggle(index)}
-            className={`fade-up transform transition-all duration-700 ease-in-out cursor-pointer p-6 rounded-2xl bg-gray-800 shadow-md hover:-translate-y-2 ${
-              animate.includes(index) ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+            className={`bg-gray-900 border rounded-2xl p-6 text-center cursor-pointer shadow-md transition duration-300 ease-in-out hover:-translate-y-2 ${
+              activeIndex === index
+                ? 'border-green-400 shadow-green-500/30'
+                : 'border-green-700 hover:shadow-green-600'
             }`}
-            style={{
-              border: activeIndex === index ? '2px solid #22c55e' : '2px solid #16a34a',
-              boxShadow: activeIndex === index ? '0 10px 25px rgba(34,197,94,0.3)' : '',
-            }}
           >
             <div className="flex justify-center mb-4">{service.icon}</div>
             <h3 className="text-xl font-semibold mb-2">{service.title}</h3>
@@ -102,7 +83,7 @@ const Services = () => {
                 activeIndex === index ? 'max-h-40 mt-3' : 'max-h-0'
               }`}
             >
-              <p className="text-gray-300 text-sm">{service.details}</p>
+              <p className="text-gray-300 text-sm font-prymary">{service.details}</p>
             </div>
           </div>
         ))}
